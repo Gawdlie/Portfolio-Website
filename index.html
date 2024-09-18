@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <section class="h-screen flex items-center text-white bg-gray-800 bg-home bg-fixed bg-cover bg-blend-overlay">
+      <div class="max-w-3xl mx-20">
+        <h1 class="text-6xl font-bold">Maverick Madison</h1>
+        <h3 class="text-4xl font-bold text-yellow-400">Sophomore in Computer Science @ ASU</h3>
+      </div>
+      <img class="rounded-full opacity-90 object-scale-down h-50 w-96" src="images/IMG_5189.jpg">
+    </section>
+    <section class="h-screen flex items-center text-white bg-gray-800 bg-projects bg-fixed bg-cover bg-blend-overlay">
+      <div class="max-w-3xl mx-20 flex flex-col">
+        <h1 class="text-4xl font-bold py-3"><span id="text"></span></h1>
+        <div>
+          <h3 class="cursor-pointer max-w-fit text-2xl font-bold hover:text-sky-400">Rehabilitation Training App (FMS) | Master Project</h3>
+          <ul class="list-disc">
+            <li>Collaborated with and product managed a team of 3 to develop a game application for individuals who have been experiencing poor
+              fine motor skills
+            </li>
+            <li>
+              Developed game modes aiding typing, drawing, writing, and pointing, totaling 5 games, each with 3 increasing
+              difficulties
+            </li>
+            <li>
+              Implemented the majority of the back-end development using p5.js and standard Javascript, providing audiovisual feedback on the user’s
+              performance, along with a scoring system displayed after each game is played
+            </li>
+            <li>
+              Designed the game application to receive mouse and keyboard inputs for computers, along with touchscreen inputs
+              for tablets
+            </li>
+          </ol>
+        </div>
+        <div>
+          <h3 class=" cursor-pointer max-w-fit text-2xl font-bold hover:text-sky-400"><a href="https://studio.code.org/projects/applab/5wlTnp-WqNNcaguVrCgwFUi8hL6VX5_jk6hqvmaD5Ps" target="_blank">Hangman! | Personal Project</a></h3>
+          <ul class="list-disc">
+            <li>
+              Created a hangman minigame in Javascript using the code.org platform, allowing users to guess particular words
+              from a predefined list of computer science-related terms
+            </li>
+            <li>
+              Implemented visual feedback by displaying the correct letters in their corresponding spots when the user guesses a
+              letter correctly while also displaying a body part whenever the user executes an incorrect letter
+            </li>
+            <li>
+              Utilized many of code.org’s Code Toolbox features, implementing various event listeners, conditionals, loops, and
+              functions while also designing the front-end aspect of the minigame using elements in the Design Toolbox
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="h-screen flex items-center text-white bg-gray-800 bg-contact bg-cover">
+      <div class="max-w-3xl mx-20">
+        <h1 class="text-4xl font-bold py-4">Contact me!</h1>
+        <p class="text-2xl font-bold cursor-pointer hover:text-sky-400 max-w-fit ml-1 pb-2"><i class="material-icons">&#9993;</i> <a href="mailto:maverickgm9@gmail.com">maverickgm9@gmail.com</a></p>
+        <p class="text-2xl font-bold cursor-pointer hover:text-sky-400 max-w-fit pb-2"><img class="h-12 w-12 inline-block" src="images/icons8-linkedin-48.png"><a href="https://www.linkedin.com/in/maverick-madison" target="_blank">Maverick Madison</a></p>
+        <p class="text-2xl font-bold cursor-pointer hover:text-sky-400 max-w-fit pb-2"><img class="h-12 w-12 inline-block" src="images/icons8-github-100.png"><a href="https://github.com/Gawdlie" target="_blank">Gawdlie</a></p>
+      </div>
+    </section>
+  </body>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+          }
+        },
+        backgroundImage: {
+          'home': "url('https://wallpapercave.com/wp/wp4029307.jpg')",
+          'projects': "url('https://wallpapers.com/images/featured/dark-5u7v1sbwoi6hdzsb.jpg')",
+          'contact' : "url('https://tasbihdigital.com/wp-content/uploads/2022/06/Blue-Backgrounds-HD.jpg')"
+        }
+      }
+    }
+  </script>
+  <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+  <script>
+  var typed = new Typed("#text", {
+    strings: [
+      "Projects!",
+    ],
+    typeSpeed: 300,
+    backSpeed: 300,
+    backDelay: 1000,
+    loop: true,
+  });
+  </script>
+</html>
